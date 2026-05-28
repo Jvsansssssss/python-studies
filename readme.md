@@ -1,20 +1,17 @@
-# Aprendizado em Python
+# 📘 Aprendizado em Python
 
-Bem-vindo ao meu repositório de estudos! Este espaço foi criado com o objetivo de centralizar todos os meus códigos, exercícios de lógica, desafios e scripts desenvolvidos enquanto aprendo e me aprofundo na linguagem Python.
+Bem-vindo ao meu repositório de estudos em Python. 
 
----
-
-## Estrutura do Projeto
-
-O repositório está organizado em pastas por assuntos e exercícios específicos para facilitar a navegação e acompanhar a minha evolução prática.
+Este espaço foi criado para centralizar exercícios, desafios de lógica, scripts e projetos desenvolvidos durante minha evolução prática na linguagem. O objetivo deste repositório é documentar meu aprendizado, fortalecer minha base em programação e acompanhar minha evolução como desenvolvedor.
 
 ---
 
-## Conceitos Praticados
-* Estruturas de controle de fluxo e repetição
-* Criação e modularização de funções
-* Tratamento de exceções e erros de entrada de dados
-* Manipulação de dados e lógica de programação limpa
+## 📂 Estrutura do Projeto
+
+O repositório está organizado em pastas separadas por temas, exercícios e conceitos específicos, facilitando a navegação e a evolução gradual dos estudos.
 
 ---
-*Foco em praticar diariamente e construir uma base sólida em desenvolvimento de software.*
+
+## 🚀 Objetivo
+
+Construir uma base sólida em desenvolvimento de software através da prática constante e da criação de projetos cada vez mais estruturados utilizando Python.

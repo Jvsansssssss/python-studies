@@ -1,5 +1,6 @@
 from math import sqrt
 from time import sleep
+
 print("------------Calculadora------------")
 
 def dois_numeros():
@@ -18,8 +19,7 @@ def multiplicacao(a, b):
 
 def divisao(a, b):
     if b == 0:
-       return "Não é possível dividir por zero."
-
+        return "Não é possível dividir por zero."
     return a / b
 
 def potencia(a, b):
@@ -27,47 +27,63 @@ def potencia(a, b):
 
 def raiz_quadrada(num):
     if num < 0:
-        return "Fale um numero positivo."
+        return "Fale um número positivo."
     return sqrt(num)
 
 while True:
-    print("1. Somar")
+
+    print("\n1. Somar")
     print("2. Subtrair")
     print("3. Multiplicar")
     print("4. Dividir")
     print("5. Potenciar")
     print("6. Raiz quadrada")
-    print()
+
     try:
-        escolha = int(input("Qual opção você quer: "))
-        if 1<= escolha <=5:
-            num1, num2 = dois_numeros()
+        escolha = int(input("\nQual opção você quer: "))
+
         match escolha:
 
             case 1:
+                num1, num2 = dois_numeros()
                 print(soma(num1, num2))
-            case 2:
-                print(subtracao(num1, num2))
-            case 3:
-                print(multiplicacao(num1, num2))
-            case 4:
-                print(divisao(num1, num2))
-            case 5:
-                print(potencia(num1, num2))
-            case 6:
-                numero = float(input("Fale qual numero voce quer a raiz quadrada: "))
-                print(raiz_quadrada(numero))
-            case _:
-                print("Escolha uma das opções acima.")
 
-        continuar = input("Deseja continuar(S/N): ").upper()
-        if continuar == "N":
-            print("Tchau tchau!!")
-            break
-        elif continuar != "S":
-            print("Digite S ou N.")
-            sleep(2)
-            continue
+            case 2:
+                num1, num2 = dois_numeros()
+                print(subtracao(num1, num2))
+
+            case 3:
+                num1, num2 = dois_numeros()
+                print(multiplicacao(num1, num2))
+
+            case 4:
+                num1, num2 = dois_numeros()
+                print(divisao(num1, num2))
+
+            case 5:
+                num1, num2 = dois_numeros()
+                print(potencia(num1, num2))
+
+            case 6:
+                numero = float(input("Fale qual número você quer a raiz quadrada: "))
+                print(raiz_quadrada(numero))
+
+            case _:
+                print("Escolha uma opção válida.")
+                continue
+
+        while True:
+            continuar = input("Deseja continuar (S/N): ").upper()
+
+            if continuar == "S":
+                break
+
+            elif continuar == "N":
+                print("Tchau tchau!!")
+                exit()
+            else:
+                print("Digite apenas S ou N.")
+
     except ValueError:
-        print("Digite uma das opções acima.")
+        print("Digite valores válidos.")
         sleep(2)

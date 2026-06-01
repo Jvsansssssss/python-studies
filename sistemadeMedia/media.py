@@ -50,3 +50,7 @@ while True:
         print(f"Quantidade de alunos cadastrados: {len(alunos)}")
         print(f"Maior média: {max(medias):.1f}")
         print(f"Menor média: {min(medias):.1f}")
+        break
+    else:
+        print("Opção inválida, encerrando...")
+        break
